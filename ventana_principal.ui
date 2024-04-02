@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>422</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>422</width>
+    <height>482</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Aj COK Farming Bot</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>app_cok.ico</normaloff>app_cok.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="mainScrollArea">
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>420</width>
+         <height>480</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item row="0" column="0" alignment="Qt::AlignLeft|Qt::AlignTop">
+         <widget class="QGroupBox" name="mainGroupBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>420</width>
+            <height>480</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>420</width>
+            <height>480</height>
+           </size>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <widget class="QSpinBox" name="spnbx_Nfarms">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>10</y>
+             <width>42</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lbl_Nfarms">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>211</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;It takes the first accounts (from top to bottom) in the Google Play list.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>Number of accounts in the Google Play list:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lbl_position">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>51</width>
+             <height>40</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Position of the account in the Google Play list. The position 1 refers to the account allocated on the top of that list.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>Account
+position</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lbl_resource">
+           <property name="geometry">
+            <rect>
+             <x>85</x>
+             <y>50</y>
+             <width>51</width>
+             <height>40</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Resource</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QScrollArea" name="scrollArea">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>90</y>
+             <width>381</width>
+             <height>321</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>379</width>
+              <height>319</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="farms_layout">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="horizontalSpacing">
+                <number>6</number>
+               </property>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="cbx_resource1">
+                 <property name="maximumSize">
+                  <size>
+                   <width>60</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Food</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Wood</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Iron</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Mithril</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="0" column="4" alignment="Qt::AlignHCenter">
+                <widget class="QCheckBox" name="chbx_heal1">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="6" alignment="Qt::AlignHCenter">
+                <widget class="QCheckBox" name="chbx_donate1">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="5" alignment="Qt::AlignHCenter">
+                <widget class="QCheckBox" name="chbx_train1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QComboBox" name="cbx_position1">
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QSpinBox" name="spnbx_level1">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>8</number>
+                 </property>
+                 <property name="value">
+                  <number>4</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3" alignment="Qt::AlignHCenter">
+                <widget class="QCheckBox" name="chbx_gathersm1">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="lbl_to_fill_space_v">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="lbl_train">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>50</y>
+             <width>31</width>
+             <height>40</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Train
+troops</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lbl_resource_2">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>50</y>
+             <width>51</width>
+             <height>40</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Donate
+to alliance</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lbl_heal">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>50</y>
+             <width>31</width>
+             <height>40</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Heal
+troops</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lbl_level">
+           <property name="geometry">
+            <rect>
+             <x>145</x>
+             <y>50</y>
+             <width>31</width>
+             <height>40</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Level</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pbtn_start">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>430</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lbl_correo_contacto">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>450</y>
+             <width>171</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>contact.cokfarmingbot@gmail.com</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pbtn_stop">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>430</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pbtn_how_to_use">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>10</y>
+             <width>81</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>How to use</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lbl_heal_2">
+           <property name="geometry">
+            <rect>
+             <x>185</x>
+             <y>50</y>
+             <width>51</width>
+             <height>40</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Gather
+SuperMine</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lbl_prompt">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>420</y>
+             <width>191</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:green</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lbl_crono">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>455</y>
+             <width>101</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:red</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="cbx_device">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>430</y>
+             <width>81</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>USB device</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Emulator</string>
+            </property>
+           </item>
+          </widget>
+          <zorder>pbtn_stop</zorder>
+          <zorder>spnbx_Nfarms</zorder>
+          <zorder>lbl_Nfarms</zorder>
+          <zorder>lbl_position</zorder>
+          <zorder>lbl_resource</zorder>
+          <zorder>scrollArea</zorder>
+          <zorder>lbl_train</zorder>
+          <zorder>lbl_resource_2</zorder>
+          <zorder>lbl_heal</zorder>
+          <zorder>lbl_level</zorder>
+          <zorder>pbtn_start</zorder>
+          <zorder>lbl_correo_contacto</zorder>
+          <zorder>pbtn_how_to_use</zorder>
+          <zorder>lbl_heal_2</zorder>
+          <zorder>lbl_prompt</zorder>
+          <zorder>lbl_crono</zorder>
+          <zorder>cbx_device</zorder>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
